@@ -1,14 +1,20 @@
-var repeatString = function(str) {
- var str = "hey";
-for (var i = 0; i < 3; i++) {
-		
-  str.repeat();
-        return str;
-}
-	}	
-	
-    
+var repeatString = function(str, count) {
+ if (count < 0) {
+ 	return "ERROR";
+ }
+   var addString = "";
 
-repeatString();
+	for (var i = 0; i < count; i++) {
+		
+         addString += str;
+}
+  
+      return addString;
+
+}
+
+		
+	
+repeatString( "hey", -1);
 
 module.exports = repeatString
