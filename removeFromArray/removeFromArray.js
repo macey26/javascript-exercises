@@ -1,4 +1,4 @@
-var removeFromArray = function(arr, itemRemove) {
+var removeFromArray = function(...args) {
  
  /*var index = arr.indexOf(0);
   if(index !== -2) {
@@ -6,15 +6,14 @@ var removeFromArray = function(arr, itemRemove) {
   	
   }*/
 
-  var itemRemove = [3];
-arr = arr.filter(item => !itemRemove.includes(item));
+  var arr = args[0];
 
-return arr;
-
-}
-  removeFromArray([1,2,3,4]);
-
-
+arr = arr.filter(function(value, index){
+	return args.indexOf(index) == -1;
+});
+	
+};
+  removeFromArray();
 
 
 module.exports = removeFromArray
