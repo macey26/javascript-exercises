@@ -1,14 +1,15 @@
-var sumAll = function(arr) {
-
+function sumAll (first , final){
 	finalSum = 0;
 
-  for (i =0; i < arr.length; i++){
+  for (i = first; i <= final; i++){
 
   	finalSum += i;
 }
 return finalSum;
 }
 
-  sumAll([1, 4]);
+ 
+sumAll();
+
 
 module.exports = sumAll
