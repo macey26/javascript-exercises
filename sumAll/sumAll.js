@@ -1,7 +1,7 @@
 function sumAll (first , final){
 	finalSum = 0;
 
-	if(first < 0 || final < 0){
+	if(first < 0 || final < 0 || typeof first !== 'number' || typeof final !== 'number'){
 		return "ERROR";
 	}
 
