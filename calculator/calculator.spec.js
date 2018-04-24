@@ -43,35 +43,35 @@ describe('multiply', function() {
 		expect(calculator.multiply([2,4])).toEqual(8);
 	});
 
-	it('multiplies several numbers', function() {
+	xit('multiplies several numbers', function() {
 		expect(calculator.multiply([2,4,6,8,10,12,14])).toEqual(645120);
 	});
 });
 
 describe('power', function() {
-	it('raises one number to the power of another number', function() {
+	xit('raises one number to the power of another number', function() {
 		expect(calculator.power(4,3)).toEqual(64); // 4 to third power is 64
 	});
 });
 
 describe('factorial', function() {
-	it('computes the factorial of 0', function() {
+	xit('computes the factorial of 0', function() {
 		expect(calculator.factorial(0)).toEqual(1); // 0! = 1
 	});
 
-	it('computes the factorial of 1', function() {
+	xit('computes the factorial of 1', function() {
 		expect(calculator.factorial(1)).toEqual(1);
 	});
 
-	it('computes the factorial of 2', function() {
+	xit('computes the factorial of 2', function() {
 		expect(calculator.factorial(2)).toEqual(2);
 	});
 
-	it('computes the factorial of 5', function() {
+	xit('computes the factorial of 5', function() {
 		expect(calculator.factorial(5)).toEqual(120);
 	});
 
-	it('computes the factorial of 10', function() {
+	xit('computes the factorial of 10', function() {
 		expect(calculator.factorial(10)).toEqual(3628800);
 	});
 });

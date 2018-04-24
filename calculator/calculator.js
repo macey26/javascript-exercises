@@ -1,18 +1,24 @@
-function add () {
-	
+function add (a, b) {
+   return a + b;
+  	
 }
 
-function subtract () {
-	
+function subtract (a, b) {
+	return a -b;
 }
 
-function sum () {
-	
+function sum (arr) {
+	return arr.reduce(function(a, b){
+		return a + b
+	}, 0);
 }
 
-function multiply () {
+function multiply (a, b) {
+	return a * b;
 	
 }
+var result = multiply(a, b)
+
 
 function power() {
 	
