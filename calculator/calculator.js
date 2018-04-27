@@ -1,4 +1,4 @@
-function add (a, b) {
+ function add (a, b) {
    return a + b;
   	
 }
@@ -13,15 +13,16 @@ function sum (arr) {
 	}, 0);
 }
 
-function multiply (a, b) {
-	return a * b;
-	
+function multiply (arr) {
+return arr.reduce(function(a, b){
+		return a * b
+	}, 1);
+ 
 }
-var result = multiply(a, b)
 
-
-function power() {
-	
+function power(a,  b) {
+   
+   return Math.pow(a, b);
 }
 
 function factorial() {

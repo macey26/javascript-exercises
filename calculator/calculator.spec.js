@@ -43,13 +43,13 @@ describe('multiply', function() {
 		expect(calculator.multiply([2,4])).toEqual(8);
 	});
 
-	xit('multiplies several numbers', function() {
+	it('multiplies several numbers', function() {
 		expect(calculator.multiply([2,4,6,8,10,12,14])).toEqual(645120);
 	});
 });
 
 describe('power', function() {
-	xit('raises one number to the power of another number', function() {
+	it('raises one number to the power of another number', function() {
 		expect(calculator.power(4,3)).toEqual(64); // 4 to third power is 64
 	});
 });
