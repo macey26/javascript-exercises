@@ -28,7 +28,7 @@ describe('#translate', function() {
 		expect(s).toEqual("ananabay");
 	});
 
-	xit('translates a word beginning with two consonants', function() {
+	it('translates a word beginning with two consonants', function() {
 		s = pigLatin.translate("cherry");
 		expect(s).toEqual('errychay');
 	});
@@ -38,11 +38,11 @@ describe('#translate', function() {
 		expect(s).toEqual('eatay iepay');
 	});
 
-	xit('translates a word beginning with three consonants', function() {
+	it('translates a word beginning with three consonants', function() {
 		expect(pigLatin.translate("three")).toEqual("eethray");
 	});
 
-	xit('counts "sch" as a single phoneme', function() {
+	it('counts "sch" as a single phoneme', function() {
 		s = pigLatin.translate("school");
 		expect(s).toEqual("oolschay");
 	});
